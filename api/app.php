@@ -5,7 +5,7 @@ header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With");
 $refererid = $_POST['referer'];
 
-$link = mysqli_connect("localhost:3311", "goldminer", "sD6tH8kZ7qeR6y", "goldminer");
+$link = mysqli_connect("localhost:3311", "goldminer", "***********", "goldminer");
 
 $placeRating = 0;
 $stack = array("status" => "delivered");

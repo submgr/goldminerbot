@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<script>
+	hash = window.location.hash.substring(1);
+	console.log(hash);
+	localStorage.setItem('referer', hash);
+	</script>
+<!-- Mirrored from www.enableds.com/products/appkit/page-vcard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Aug 2020 16:04:21 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+	<title>APP[main]</title>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+	<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+	<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"> 
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+	<script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
+	<script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="//vk.com/js/api/adman_init.js" charset="utf-8"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/game.js"></script>
+	
+
+	<script>
+	  // Sends event to client
+	  vkBridge.send('VKWebAppInit');
+	</script>
+	</head>
+	<a href="#" id="errorBlockShow" data-menu="menu-warning-1">
+<body class="theme-light">
+	<div id="menu-warning-1" class="menu menu-box-modal rounded-m" data-menu-height="140" data-menu-width="350">
+<div class="menu-title">
+<i class="fa fa-times-circle float-left mr-3 scale-box ml-3 fa-4x color-red-dark"></i>
+<p class="color-highlight">The task has</p>
+<h1>Failed</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mb-0 mt-0">
+<p class="pr-3">
+This task has failed. This message can now be dismissed manually or programatically.
+</p>
+</div>
+</div>
+	<div id="preloader">
+		<div class="spinner-border color-highlight" role="status"></div>
+	</div>
+	<div id="page">
+		<div class="page-title page-title-fixed">
+			<h1>Gold Miner</h1><a href="#" class="chip chip-s bg-dark-dark">
+<i class="fa fa-check color-white bg-green-dark"></i>
+<span id="onlineCount" class="color-white">*подсчет онлайна*</span>
+</a></div>
+		<div class="page-title-clear"></div>
+		<div class="page-content fixed-height-page">
+			<div class="card card-style bg-33" data-card-height="400">
+				<div class="card-bottom text-center">
+					<p class="color-white text-center font-22 opacity-70 px-4"> У тебя золота: </p> <p id="balance" class="color-white font-40 font-900 opacity-70 px-4"> <div id="balanceSpinner" class="spinner-border color-highlight"></div> </p> 
+					<a onclick="earnAct()" class="btn btn-center-m btn-s font-12 font-600 mb-4 bg-white color-black">Заработать</a>
+					<a onclick="earnStory()" id="earnStoryBonus" class="btn btn-center-m btn-s font-12 font-600 mb-4 bg-white color-black">Получить 20 золота за историю</a>
+					<a onclick="earnNotify()" id="earnNotifyBonus" class="btn btn-center-m btn-s font-12 font-600 mb-4 bg-white color-black">Получить 40 золота за подписку на уведомления</a>
+					<script>
+					if(localStorage.getItem('storyBonus')){
+						$("#earnStoryBonus").hide();
+					  }else{
+					}
+					if(localStorage.getItem('notifyBonus')){
+						$("#earnNotifyBonus").hide();
+					  }else{
+					}
+</script>
+				</div>
+				<div class="card-overlay bg-gradient"></div>
+			</div>
+			<div class="card card-style">
+<div class="content mb-0">
+<div class="row mb-0">
+<div class="col-6 pl-1 pr-1">
+<a onclick="share()" class="btn btn-3d btn-center-m btn-full mb-3 rounded-xl text-uppercase font-900 shadow-s border-red-dark  bg-red-light">Поделиться</a>
+</div>
+<div class="col-6 pl-1">
+<a onclick="newStory()" class="btn btn-3d btn-center-m btn-full mb-3 rounded-xl text-uppercase font-900 shadow-s  border-green-dark bg-green-light">История</a>
+</div>
+<div class="col-6 pl-1 pr-1">
+<a onclick="" style="display: none;" data-menu="subscribeAsk" id="subscribeAskbtn" class="btn btn-3d btn-center-m btn-full mb-3 rounded-xl text-uppercase font-900 shadow-s border-red-dark  bg-red-light">Подписаться</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+		<a href="infect.html" class="btn btn-full btn-margins rounded-s btn-m font-12 font-600 mb-4 gradient-highlight color-white">Пригласить друзей</a>
+		<a href="rating.html" id="triggerRating" class="btn btn-full btn-margins rounded-s btn-m font-12 font-600 mb-4 gradient-highlight color-white triggerRating ">Рейтинг</a>
+		</div>
+<div id="subscribeAsk" class="menu menu-box-modal rounded-m" data-menu-height="300" data-menu-width="350">
+<h1 class="text-center mt-4"><i class="fa fa-3x fa-info-circle scale-box color-blue-dark shadow-xl rounded-circle"></i></h1>
+<h3 class="text-center mt-3 font-700">Хотите подписаться на наше сообщество?</h3>
+<br>
+<div class="row mb-0 mr-3 ml-3">
+<div class="col-6">
+<a href="#" class="btn close-menu btn-full btn-m color-red-dark border-red-dark font-600 rounded-s">Нет, спасибо</a>
+</div>
+<script>
+	setTimeout(function(){
+		if(localStorage.getItem('issubscribe')){
+			} else {
+			  $('#subscribeAskbtn').trigger('click');
+			}
+	},1000);
+
+	function subscribe(){
+  vkBridge
+  .send('VKWebAppJoinGroup', {'group_id': 202005195})
+  .then(data => {
+    // Handling received data
+    localStorage.setItem('issubscribe', 'yes');
+  })
+  .catch(error => {
+    // Handling an error
+  });
+}
+</script>
+<div class="col-6">
+<a onclick="subscribe()" class="btn close-menu btn-full btn-m color-green-dark border-green-dark font-600 rounded-s">Подписаться</a>
+</div>
+</div>
+</div>
+	</div>
+
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/custom.js"></script>
+	<script>
+			online();
+			gatherInfo();
+			$("#subscribeAskbtn").hide();
+		</script>
+	
+</body>

@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- Mirrored from www.enableds.com/products/appkit/page-courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Aug 2020 16:04:26 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+	<title>AppKit Mobile</title>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+	<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+	<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+	<script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
+	<script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="//vk.com/js/api/adman_init.js" charset="utf-8"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/game.js"></script>
+
+	<script>
+	  // Sends event to client
+	  vkBridge.send('VKWebAppInit');
+
+	</script> </head>
+
+<body onclick="ratingGather();" class="theme-light">
+	<div id="preloader">
+		<div class="spinner-border color-highlight" role="status"></div>
+	</div>
+	<div id="page">
+		<div class="page-title page-title-fixed">
+			<h1>Gold Miner</h1> <a href="#" class="chip chip-s bg-dark-dark">
+<i class="fa fa-check color-white bg-green-dark"></i>
+<span id="onlineCount" class="color-white">*подсчет онлайна*</span>
+</a></div>
+		<div class="page-title-clear"></div>
+		<script>
+			ratingGather();
+			online();
+			$('.gatherInfo').on('click', function() { 
+		     gatherInfo();
+		});
+
+			function gotoMain(){
+				location = game.html;
+	  			location = game.html;
+			}
+		</script>
+		<div class="page-content">
+			<div class="tab-controls mr-3 ml-3 tabs-round tab-animated tabs-medium tabs-rounded clearfix shadow-xl mb-4" data-tab-items="1" data-tab-active="bg-highlight activated color-white"> <a href="#" class="font-12" data-tab-active data-tab="tab-1">Топ 15 игроков</a></div>
+			<div class="tab-controls mr-3 ml-3 tabs-round tab-animated tabs-medium tabs-rounded clearfix shadow-xl mb-4" data-tab-items="1" data-tab-active="bg-highlight activated color-white"> <a href="#" class="font-12" data-tab-active data-tab="tab-1"><span id="ratingPlace">Рассчитываем Вашу позицию в рейтинге..</span></a></div>
+			<div class="tab-content" id="tab-1">
+				<a onclick="gotoMain()" data-back-button class="gatherInfo btn btn-full btn-margins rounded-s btn-m font-12 font-600 mb-4 gradient-highlight color-white">Вернуться назад</a>
+				<div class="card card-style"> <img id="prize1" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name1">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar1" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize2" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name2">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar2" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize3" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name3">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar3" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize4" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name4">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar4" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize5" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name5">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar5" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize6" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name6">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar6" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize7" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name7">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar7" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize8" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name8">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar8" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize9" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name9">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar9" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize10" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name10">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar10" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize11" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name11">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar11" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize12" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name12">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar12" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize13" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name13">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar13" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize14" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name14">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar14" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-style"> <img id="prize15" src="images/pictures/13w.jpg" class="img-fluid">
+					<div class="content">
+						<h1 id="name15">Имя загружается..</h1>
+						<div class="d-flex">
+							<div class="mr-auto">
+								<div class="list-group list-custom-large mt-n3">
+									<a href="#" class="border-0"> <img id="avatar15" src="images/pictures/1s.jpg" class="rounded-sm"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+		<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+		<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+	</div>
+	
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/custom.js"></script>
+	<script type="text/javascript" src="scripts/game.js"></script>
+</body>
